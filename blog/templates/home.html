@@ -1,6 +1,6 @@
 <a href="{% url 'new' %}">글쓰기</a>
 {% for blog in blogs.all %}
-    <h1> 제목 : {{ blog.title }}</h1>
-    <p> 날짜 : {{ blog.pub_date }}</p>
-    <p> 미리보기 : {{ blog.summary }}<a href="{% url 'detail' blog.id %}">...more</a></p>
+    <h1 style="background-color:orange; color:red;"> 제목 : {{ blog.title }}</h1>
+    <p style="background-color:orange; color:red;"> 날짜 : {{ blog.pub_date }}</p>
+    <p style="background-color:orange; color:red;"> 미리보기 : {{ blog.summary }}<a href="{% url 'detail' blog.id %}">...more</a></p>
 {% endfor %}
